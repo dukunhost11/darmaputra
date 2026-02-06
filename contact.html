@@ -4,42 +4,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>projek darma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
 </head>
 <style>
     body {
-        background-color: #d10505;
+        font-family: "Plus Jakarta Sans", Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        background-image: url('https://i.ibb.co.com/NggXgYvc/pngtree-a-blue-planet-and-stars-with-glowing-lines-in-the-space-image-19842953.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
         margin: 0 auto;
         overflow-x: hidden;
     }
 
-    .header {
-        position: relative;
-        background-color: white;
-        width: 120%;
-        height: 70px;
-        margin-left: -20px;
-    }
 
-    nav {
-        display: flex;
-        justify-content: space-around;
-        background-color: #ad0505;
-        padding: 1rem;
-    }
 
-    nav a {
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-    }
-
-    nav a:hover {
-        color: #ff812d;
-        text-decoration: none;
-    }
-
-    .contact {
+    .header h1 {
         color: white;
+        margin-left: 10px;
+    }
+
+    .judul-web {
+        color: aliceblue;
+        text-align: center;
+        background-color: #ad0505;
+    }
+
+    .deskripsi {
+        color: white;
+        text-shadow: black;
+        text-align: center;
+    }
+
+    .header {
+        height: 100vh;
+
+        position: relative;
+        overflow: hidden;
+        color: white;
+    }
+
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 80px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .navbar ul {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+    }
+
+    .navbar a {
+        color: aliceblue;
+        text-decoration: none;
+    }
+
+    .navbar a:hover {
+        color: rgb(7, 49, 49);
+    }
+
+    .home {
+        width: 380px;
+        margin: 40px auto;
+        padding: 25px;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .header-content {
+        height: calc(100vh - 80px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 10;
+        position: relative;
+    }
+
+    .header-content h1 {
+        font-size: 64px;
+        letter-spacing: 4px;
+    }
+
+    .header-content p {
+        max-width: 600px;
+        margin: 20px 0;
+        opacity: 0.9;
+    }
+
+    .header-content button {
+        padding: 12px 30px;
+        border-radius: 30px;
+        border: none;
+        background: transparent;
+        border: 2px solid white;
+        color: white;
+        cursor: pointer;
+    }
+
+    .profile-pic {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #ffffff;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        margin-bottom: 15px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14px;
+    }
+
+    td {
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+    }
+
+    td:first-child {
+        font-weight: bold;
+        width: 40%;
+    }
+
+    .copyright {
+        color: white;
+        opacity: 0.7;
+        text-align: center;
+
+        width: 120%;
+        height: 40px;
+        margin-top: 130px;
+        margin-left: -20px;
+
 
     }
 
@@ -63,26 +178,45 @@
         width: 40%;
         margin-left: 11px;
     }
+
+   
+   
 </style>
 
 <body>
-    <div class="header">
-        <nav>
-            <a href="home.html">home</a><span>|</span>
-            <a href="contact.html" style="color: #ff812d;">contact</a><span>|</span>
-            <a href="about-me.html">about-me</a><span>|</span>
-
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">DarmaProjek</div>
+            <ul>
+                <li><a href="home.html">Home </a></li>
+                <li><a href="about-me.html"></a>About-Me</li>
+                <li><a href="contact.html"><span style="color: rgb(7, 49, 49);">Contact</span></a></li>
+            </ul>
         </nav>
-    </div>
 
-    <div class="contact">
-        <h1>Contact me, Di <span style="color: #ff812d;">Sini</span></h1>
-        <form>
-            <input class="email" type="email" placeholder="masukan email.."> <br></br>
-            <input class="pesan" type="text" placeholder="masukan pesan.."><br></br>
-            <input class="button" type="submit" </form>
-    </div>
+        <div class="header-content">
+            <div class="home">
+                <p>Contact Me darma<br>(❁´◡`❁)<br></p>
+                <form>
+                    <input class="email" type="email" placeholder="masukan email.."> <br></br>
+                    <input class="pesan" type="text" placeholder="masukan pesan.."><br></br>
+                    <input class="button" type="submit" </form>
+            </div>
+
+
+
+            <footer>
+                <div class="copyright">
+                    <p>@copyright by darma</p>
+                </div>
+            </footer>
+        </div>
+
+     
+
+     
 
 </body>
+
 
 </html>
