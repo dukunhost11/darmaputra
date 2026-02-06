@@ -2,68 +2,164 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projek darma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
 </head>
 <style>
-  body {
-    background-color: #d10505;
-    margin: 0 auto;
-    overflow-x: hidden;
-  }
+    body {
+        font-family: "Plus Jakarta Sans", Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        background-image: url('https://i.ibb.co.com/NggXgYvc/pngtree-a-blue-planet-and-stars-with-glowing-lines-in-the-space-image-19842953.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
 
-  .header {
-    position: relative;
-    background-color: white;
-    width: 120%;
-    height: 70px;
-    margin-left: -20px;
-  }
 
-  nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: #ad0505;
-    padding: 1rem;
-  }
 
-  nav a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-  }
+    .header h1 {
+        color: white;
+        margin-left: 10px;
+    }
 
-  nav a:hover {
-    color: #ff812d;
-    text-decoration: none;
-  }
+    .judul-web {
+        color: aliceblue;
+        text-align: center;
+        background-color: #ad0505;
+    }
 
-  .home-h1 {
-    color: white;
-    margin-left: 11px;
-  }
+    .deskripsi {
+        color: white;
+        text-shadow: black;
+        text-align: center;
+    }
 
-  img {
-    width: 40%;
+    .header {
+        height: 100vh;
 
-  }
+        position: relative;
+        overflow: hidden;
+        color: white;
+    }
+
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 80px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .navbar ul {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+    }
+
+    .navbar a {
+        color: aliceblue;
+        text-decoration: none;
+    }
+
+    .navbar a:hover {
+        color: rgb(7, 49, 49);
+    }
+
+    .home {
+        width: 380px;
+        margin: 40px auto;
+        padding: 25px;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .header-content {
+        height: calc(100vh - 80px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 10;
+        position: relative;
+    }
+
+    .header-content h1 {
+        font-size: 64px;
+        letter-spacing: 4px;
+    }
+
+    .header-content p {
+        max-width: 600px;
+        margin: 20px 0;
+        opacity: 0.9;
+    }
+
+    .header-content button {
+        padding: 12px 30px;
+        border-radius: 30px;
+        border: none;
+        background: transparent;
+        border: 2px solid white;
+        color: white;
+        cursor: pointer;
+    }
+
+    .copyright {
+        color: white;
+        opacity: 0.7;
+        text-align: center;
+
+        width: 120%;
+        height: 40px;
+        margin-top: 130px;
+        margin-left: -20px;
+
+
+    }
 </style>
 
 <body>
-  <div class="header">
-    <nav>
-      <a href="home.html" style="color: #ff812d;">home</a><span>|</span>
-      <a href="contact.html">contact</a><span>|</span>
-      <a href="about-me.html">about-me</a><span>|</span>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">DarmaProjek</div>
+            <ul>
+                <li><a href="home.html"><span style="color: rgb(7, 49, 49);">Home</span> </a></li>
+                <li><a href="about-me.html">About-Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-    </nav>
-  </div>
+        <div class="header-content">
+            <div class="home">
+              <p>home darma selamat datang di home darma <br>belum ada isi di tunggu yaa man teman ehekk (●'◡'●)</p>
+            </div>
+           
 
-  <div class="home-h1">
-    <h1>Selamat Datang, Di <span style="color: #ff812d;">Home</span></h1>
-    <h2>ini adalah tampilan home darma simpel present tensee waselolee joss telolet lolet malassssss styleee</h2>
-    <img src="darmaprojek.jpeg">
-  </div>
+
+
+            <footer>
+                <div class="copyright">
+                    <p>@copyright by darma</p>
+                </div>
+            </footer>
+        </div>
+
+     
+
+     
+
 </body>
+
 
 </html>
